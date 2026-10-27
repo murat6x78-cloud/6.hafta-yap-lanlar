@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script src="deneme.js"></script> 
+ <script type="text/javascript"> 
+ var txt1="what a ";
+ var txt2="nice day";
+ var firsname,lastname;
+ var sayi1=100;
+ var sayi2=10;
+ var sonuc=sayi1+sayi2;
+ firstname="Murat";
+ lastname="Şahin";
+document.write(txt1+" "+txt2);
+document.writeln("<br>"+"Benim Adım "+firstname+" Soyadım "+lastname+"<br>");
+document.write(sonuc+"<br>");  
+var x=5+5;
+document.write(x+"<br>");
+var x="5"+"5";
+document.write(x+"<br>");
+var x=5+"5";
+document.write(x+"<br>");
+var x="5"+5;
+document.write(x+"<br>");
+var age=21,a=5;
+if(age<18){
+    document.write("You are not allowed to enter");
+}
+else{
+    document.write("You are allowed to enter");
+}
+var time= new Date().getHours();
+if(time<10){
+    document.write("<br>"+"Good morning");
+}
+else if(time<20){
+    document.write("<br>"+"Good day");
+}
+else{
+    document.write("<br>"+"Good night");
+}
+var gunler= new Date().getDay();
+switch(gunler){
+    case 0:
+        document.write("<br>"+"Bugün Pazartesi");
+        break;
+    case 1:
+        document.write("<br>"+"Bugün Salı");
+        break;
+    case 2:
+        document.write("<br>"+"Bugün Çarşamba");
+        break;
+    case 3:
+        document.write("<br>"+"Bugün Perşembe");
+        break;
+    case 4:
+        document.write("<br>"+"Bugün Cuma");
+        break;
+    case 5:
+        document.write("<br>"+"Bugün Cumartesi");
+        break;
+    case 6:
+        document.write("<br>"+"Bugün Pazar");
+        break;
+}
+
+ </script>
+<script> 
+alert("lütfen tarayıcıyı yeniden başlatın");
+    confirm("Çerezleri kabul ediyor musunuz?");
+    prompt("Lütfen adınızı giriniz","Adınız");
+     function uyarı() {
+        alert("bu bir uyarı mesajıdır");
+    };
+   function Toplama(sayı1 , sayı2){
+    var toplam=sayı1+sayı2;
+    return toplam;
+   }
+
+
+</script>
+<form>
+    <input type="button" value="Uyarı" onclick="uyarı()">
+    <input type="button" value="Toplama" onclick="alert(Toplama(5,10))">
+</form>
+ 
+</head>
+<body>
+   
+</body>
+</html>
